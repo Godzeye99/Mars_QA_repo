@@ -1,0 +1,5 @@
+D:\Work space\Hemz\Hemz_QA_Mars\obj\Debug\net8.0\Hemz_QA_Mars.csproj.AssemblyReference.cache
+D:\Work space\Hemz\Hemz_QA_Mars\obj\Debug\net8.0\Hemz_QA_Mars.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work space\Hemz\Hemz_QA_Mars\obj\Debug\net8.0\Hemz_QA_Mars.AssemblyInfoInputs.cache
+D:\Work space\Hemz\Hemz_QA_Mars\obj\Debug\net8.0\Hemz_QA_Mars.AssemblyInfo.cs
+D:\Work space\Hemz\Hemz_QA_Mars\obj\Debug\net8.0\Hemz_QA_Mars.csproj.CoreCompileInputs.cache
