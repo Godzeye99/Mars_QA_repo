@@ -1,10 +1,22 @@
-﻿using Hemz_QA_Mars.common;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using OpenQA.Selenium;
 
-namespace Hemz_QA_Mars.Pages
+namespace QA_Mars_OnboardingTask.Pages
 {
-    public class SignIn : Driver
+    [Binding]
+    public class SignInPage
     {
+        private IWebDriver driver;
+
+        public SignInPage(IWebDriver driver)
+        {
+            this.driver = driver;
+        }
+
         By signIn = By.LinkText("Sign In");
         By emailField = By.XPath("//input[contains(@name,'email')]");
         By passwordField = By.XPath("//input[contains(@name,'password')]");
@@ -19,13 +31,13 @@ namespace Hemz_QA_Mars.Pages
         public void enter_email(String email)
         {
             IWebElement emailElement = driver.FindElement(emailField);
-            emailElement.Click();
+            emailElement.SendKeys(email);
         }
 
         public void enter_password(String password)
         {
             IWebElement passwordElement = driver.FindElement(passwordField);
-            passwordElement.Click();
+            passwordElement.SendKeys(password);
         }
 
         public void click_login_button()

@@ -20,22 +20,22 @@ namespace QA_Mars_OnboardingTask.Features
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "3.9.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("As a customer I can add edit and delete language")]
-    public partial class AsACustomerICanAddEditAndDeleteLanguageFeature
+    [NUnit.Framework.DescriptionAttribute("As a customer I can add edit and delete skills")]
+    public partial class AsACustomerICanAddEditAndDeleteSkillsFeature
     {
         
         private TechTalk.SpecFlow.ITestRunner testRunner;
         
         private string[] _featureTags = ((string[])(null));
         
-#line 1 "Language.feature"
+#line 1 "Skill.feature"
 #line hidden
         
         [NUnit.Framework.OneTimeSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "As a customer I can add edit and delete language", null, ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "As a customer I can add edit and delete skills", null, ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -78,31 +78,30 @@ namespace QA_Mars_OnboardingTask.Features
 #line 4
 #line hidden
 #line 5
- testRunner.Given("I navigate to Language", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I navigate to skills", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TC1 - Positive - Add new Language")]
-        [NUnit.Framework.CategoryAttribute("cleanupLanguageAfterTest")]
-        [NUnit.Framework.TestCaseAttribute("English", "Fluent", "English has been added to your languages", null)]
-        [NUnit.Framework.TestCaseAttribute("French", "Basic", "French has been added to your languages", null)]
-        [NUnit.Framework.TestCaseAttribute("German", "Conversational", "German has been added to your languages", null)]
-        [NUnit.Framework.TestCaseAttribute("Hindi", "Native/Bilingual", "Hindi has been added to your languages", null)]
-        public virtual void TC1_Positive_AddNewLanguage(string language, string level, string successMessage, string[] exampleTags)
+        [NUnit.Framework.DescriptionAttribute("TC1 Add new skill")]
+        [NUnit.Framework.CategoryAttribute("cleanupSkillAfterTest")]
+        [NUnit.Framework.TestCaseAttribute("Java", "Beginner", "Java has been added to your skills", null)]
+        [NUnit.Framework.TestCaseAttribute("Testing", "Intermediate", "Testing has been added to your skills", null)]
+        [NUnit.Framework.TestCaseAttribute("Automation", "Expert", "Automation has been added to your skills", null)]
+        public virtual void TC1AddNewSkill(string skill, string level, string successMessage, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "cleanupLanguageAfterTest"};
+                    "cleanupSkillAfterTest"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
             }
             string[] tagsOfScenario = @__tags;
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            argumentsOfScenario.Add("language", language);
+            argumentsOfScenario.Add("skill", skill);
             argumentsOfScenario.Add("level", level);
             argumentsOfScenario.Add("successMessage", successMessage);
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC1 - Positive - Add new Language", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC1 Add new skill", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 8
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -127,27 +126,27 @@ this.ScenarioInitialize(scenarioInfo);
 this.FeatureBackground();
 #line hidden
 #line 10
- testRunner.When(string.Format("I add a new langauge \'{0}\' with level \'{1}\'", language, level), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When(string.Format("I add a new skill \'{0}\' with level \'{1}\'", skill, level), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 11
- testRunner.Then(string.Format("I expect language add success message as \'{0}\'", successMessage), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then(string.Format("I expect skill add success message as \'{0}\'", successMessage), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TC2 - Positive - Edit Language")]
-        [NUnit.Framework.CategoryAttribute("addLanguageAsPreSetup")]
-        [NUnit.Framework.CategoryAttribute("cleanupLanguageAfterTest")]
-        public virtual void TC2_Positive_EditLanguage()
+        [NUnit.Framework.DescriptionAttribute("TC2 Edit skill")]
+        [NUnit.Framework.CategoryAttribute("addSkillAsPreSetup")]
+        [NUnit.Framework.CategoryAttribute("cleanupSkillAfterTest")]
+        public virtual void TC2EditSkill()
         {
             string[] tagsOfScenario = new string[] {
-                    "addLanguageAsPreSetup",
-                    "cleanupLanguageAfterTest"};
+                    "addSkillAsPreSetup",
+                    "cleanupSkillAfterTest"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC2 - Positive - Edit Language", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 21
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC2 Edit skill", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 20
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -169,28 +168,28 @@ this.ScenarioInitialize(scenarioInfo);
                 this.ScenarioStart();
 #line 4
 this.FeatureBackground();
+#line hidden
+#line 22
+ testRunner.When("I edit \'Java\' skill to \'Python\' with level \'Intermediate\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 23
- testRunner.When("I edit \'English\' language to \'German\' with level \'Conversational\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 24
- testRunner.Then("I expect language update success message as \'German has been updated to your lang" +
-                        "uages\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I expect skill update success message as \'Python has been updated to your skills\'" +
+                        "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TC3 - Positive - Delete Language")]
-        [NUnit.Framework.CategoryAttribute("addLanguageAsPreSetup")]
-        public virtual void TC3_Positive_DeleteLanguage()
+        [NUnit.Framework.DescriptionAttribute("TC3 Delete skill")]
+        [NUnit.Framework.CategoryAttribute("addSkillAsPreSetup")]
+        public virtual void TC3DeleteSkill()
         {
             string[] tagsOfScenario = new string[] {
-                    "addLanguageAsPreSetup"};
+                    "addSkillAsPreSetup"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC3 - Positive - Delete Language", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 27
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC3 Delete skill", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 26
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -212,28 +211,27 @@ this.ScenarioInitialize(scenarioInfo);
                 this.ScenarioStart();
 #line 4
 this.FeatureBackground();
+#line hidden
+#line 28
+ testRunner.When("I delete an existing skill \'Java\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 29
- testRunner.When("I delete an existing language \'English\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 30
- testRunner.Then("I expect language delete success message as \'English has been deleted from your l" +
-                        "anguages\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I expect skill delete success message as \'Java has been deleted\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TC4 - Negative Valid - Add same language twice and verify error message")]
-        [NUnit.Framework.CategoryAttribute("cleanupLanguageAfterTest")]
-        public virtual void TC4_NegativeValid_AddSameLanguageTwiceAndVerifyErrorMessage()
+        [NUnit.Framework.DescriptionAttribute("TC4 - Negative Valid - Add same skill twice and verify error message")]
+        [NUnit.Framework.CategoryAttribute("cleanupSkillAfterTest")]
+        public virtual void TC4_NegativeValid_AddSameSkillTwiceAndVerifyErrorMessage()
         {
             string[] tagsOfScenario = new string[] {
-                    "cleanupLanguageAfterTest"};
+                    "cleanupSkillAfterTest"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC4 - Negative Valid - Add same language twice and verify error message", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 33
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC4 - Negative Valid - Add same skill twice and verify error message", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 32
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -256,32 +254,31 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
+#line 34
+ testRunner.When("I add a new skill \'Java\' with level \'Beginner\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
 #line 35
- testRunner.When("I add a new langauge \'English\' with level \'Conversational\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.Then("I expect skill add success message as \'Java has been added to your skills\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
 #line 36
- testRunner.Then("I expect language add success message as \'English has been added to your language" +
-                        "s\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.When("I add a new skill \'Java\' with level \'Beginner\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
 #line 37
- testRunner.When("I add a new langauge \'English\' with level \'Conversational\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line hidden
-#line 38
- testRunner.Then("I expect language error message as \'This language is already exist in your langua" +
-                        "ge list.\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I expect skill error message as \'This skill is already exist in your skill list.\'" +
+                        "", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("TC5 - Negative Invalid - Add same language twice and verify error message")]
-        public virtual void TC5_NegativeInvalid_AddSameLanguageTwiceAndVerifyErrorMessage()
+        [NUnit.Framework.DescriptionAttribute("TC5 - Negative Invalid - Add same skill twice and verify error message")]
+        public virtual void TC5_NegativeInvalid_AddSameSkillTwiceAndVerifyErrorMessage()
         {
             string[] tagsOfScenario = ((string[])(null));
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC5 - Negative Invalid - Add same language twice and verify error message", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 41
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("TC5 - Negative Invalid - Add same skill twice and verify error message", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 40
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -304,14 +301,14 @@ this.ScenarioInitialize(scenarioInfo);
 #line 4
 this.FeatureBackground();
 #line hidden
+#line 42
+ testRunner.When("I click skill Add New button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
 #line 43
- testRunner.When("I click language Add New button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.And("I click skill Add button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
 #line 44
- testRunner.And("I click language Add button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line hidden
-#line 45
- testRunner.Then("I expect language error message as \'Please enter language and level\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I expect skill error message as \'Please enter skill and experience level\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
